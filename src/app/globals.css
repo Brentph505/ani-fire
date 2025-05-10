@@ -157,3 +157,10 @@ body::-webkit-scrollbar-thumb {
   --plyr-color-main: hsl(198, 100%, 50%);
   /* CSS Vars: https://vidstack.io/docs/player/components/layouts/plyr-layout#css-variables */
 }
+
+/* Hide the volume slider on mobile for the ani-player */
+@media (max-width: 640px) {
+  .ani-player .vds-volume .vds-slider {
+    display: none !important;
+  }
+}
